@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KnowledgeForFun — Explore nature, architecture, and photography through stories, history, and stunning visuals.">
+  <title>KnowledgeForFun | Nature, Architecture & Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Knowledge<span>ForFun</span></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#articles" class="nav__link">Articles</a></li>
+          <li><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__close" id="nav-close" aria-label="Close menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <p class="hero__subtitle fade-in">Welcome to my world of discovery</p>
+        <h1 class="hero__title">
+          <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </h1>
+        <p class="hero__description fade-in">
+          Explore the stories, history, and significance behind breathtaking photographs of nature, architecture, and the world around us.
+        </p>
+        <div class="hero__buttons fade-in">
+          <a href="#articles" class="btn btn--primary">Featured Articles</a>
+          <a href="#gallery" class="btn btn--outline">View Gallery</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">About</span>
+          <h2 class="section__title">Stories Behind Every Image</h2>
+          <p class="section__description">
+            KnowledgeForFun is a personal blog where curiosity meets creativity. I share knowledge, photography, travel experiences, and architectural insights — helping you see the world through a lens of wonder and understanding.
+          </p>
+        </div>
+
+        <div class="about__topics">
+          <article class="about__card glass fade-in">
+            <div class="about__icon">🌿</div>
+            <h3>Nature</h3>
+            <p>From ancient forests to hidden waterfalls, discover the ecological wonders and natural histories that make our planet extraordinary.</p>
+          </article>
+          <article class="about__card glass fade-in">
+            <div class="about__icon">🏛</div>
+            <h3>Architecture</h3>
+            <p>Explore the design philosophies, cultural influences, and engineering marvels behind iconic structures around the globe.</p>
+          </article>
+          <article class="about__card glass fade-in">
+            <div class="about__icon">📷</div>
+            <h3>Photography</h3>
+            <p>Learn the techniques, settings, and creative decisions that transform ordinary moments into compelling visual narratives.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="articles section" id="articles">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Featured</span>
+          <h2 class="section__title">Latest Articles</h2>
+          <p class="section__description">Dive into curated stories that blend stunning imagery with deep, informative content.</p>
+        </div>
+
+        <div class="articles__grid">
+          <article class="article-card glass fade-in">
+            <div class="article-card__image">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Sunlight filtering through a dense forest canopy" loading="lazy">
+              <span class="article-card__category">Nature</span>
+            </div>
+            <div class="article-card__content">
+              <h3>The Secret Language of Ancient Forests</h3>
+              <p>Discover how old-growth forests communicate through underground fungal networks and why preserving them matters more than ever.</p>
+              <a href="#" class="article-card__link">Read Article <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="article-card glass fade-in">
+            <div class="article-card__image">
+              <img src="https://images.unsplash.com/photo-1518173946687-a4c036bc2533?w=800&q=80" alt="Grand cathedral with intricate Gothic architecture" loading="lazy">
+              <span class="article-card__category">Architecture</span>
+            </div>
+            <div class="article-card__content">
+              <h3>Gothic Cathedrals: Engineering the Divine</h3>
+              <p>How medieval architects pushed the limits of stone and light to create spaces that still inspire awe centuries later.</p>
+              <a href="#" class="article-card__link">Read Article <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="article-card glass fade-in">
+            <div class="article-card__image">
+              <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80" alt="Camera lens capturing a golden sunset" loading="lazy">
+              <span class="article-card__category">Photography</span>
+            </div>
+            <div class="article-card__content">
+              <h3>Chasing Golden Hour: A Photographer's Guide</h3>
+              <p>Master the art of shooting during the magic hour — from exposure settings to composition techniques that make light sing.</p>
+              <a href="#" class="article-card__link">Read Article <span>&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Gallery</span>
+          <h2 class="section__title">Visual Journeys</h2>
+          <p class="section__description">Click any image to explore it in full detail.</p>
+        </div>
+
+        <div class="gallery__grid">
+          <div class="gallery__item fade-in" data-index="0">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Snow-capped mountain peaks at sunrise" loading="lazy">
+            <div class="gallery__overlay"><span>Mountain Dawn</span></div>
+          </div>
+          <div class="gallery__item fade-in" data-index="1">
+            <img src="https://images.unsplash.com/photo-1519501025264-65b15a628d84?w=600&q=80" alt="Modern glass skyscraper reflecting clouds" loading="lazy">
+            <div class="gallery__overlay"><span>Urban Reflections</span></div>
+          </div>
+          <div class="gallery__item fade-in" data-index="2">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80" alt="Misty valley with rolling green hills" loading="lazy">
+            <div class="gallery__overlay"><span>Valley Mist</span></div>
+          </div>
+          <div class="gallery__item fade-in" data-index="3">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Traditional Japanese temple in autumn" loading="lazy">
+            <div class="gallery__overlay"><span>Temple Serenity</span></div>
+          </div>
+          <div class="gallery__item fade-in" data-index="4">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="Turquoise lake surrounded by pine trees" loading="lazy">
+            <div class="gallery__overlay"><span>Alpine Lake</span></div>
+          </div>
+          <div class="gallery__item fade-in" data-index="5">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&q=80" alt="Rolling green countryside at golden hour" loading="lazy">
+            <div class="gallery__overlay"><span>Golden Fields</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <button class="lightbox__nav lightbox__prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+      <div class="lightbox__content">
+        <img src="" alt="" id="lightbox-img">
+        <p class="lightbox__caption" id="lightbox-caption"></p>
+      </div>
+      <button class="lightbox__nav lightbox__next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+    </div>
+
+    <!-- Inspirational Quote -->
+    <section class="quote section">
+      <div class="container">
+        <blockquote class="quote__block glass fade-in">
+          <svg class="quote__icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+          <p>"The world is a book, and those who do not travel read only one page. Every photograph is a chapter waiting to be explored."</p>
+          <cite>— Saint Augustine (adapted)</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section" id="newsletter">
+      <div class="container">
+        <div class="newsletter__wrapper glass fade-in">
+          <div class="newsletter__text">
+            <h2>Stay Curious</h2>
+            <p>Subscribe to receive new articles, photography collections, and stories delivered to your inbox.</p>
+          </div>
+          <form class="newsletter__form" id="newsletter-form" novalidate>
+            <div class="form-group">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+              <span class="form-error" id="newsletter-error"></span>
+            </div>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+          <p class="newsletter__success" id="newsletter-success" hidden>Thank you for subscribing! Welcome to the journey.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__description">Have a question, collaboration idea, or just want to say hello? I'd love to hear from you.</p>
+        </div>
+
+        <form class="contact__form glass fade-in" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" placeholder="Your name" required>
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="your@email.com" required>
+              <span class="form-error" id="email-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" placeholder="What's this about?" required>
+            <span class="form-error" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" rows="5" placeholder="Your message..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="contact__success" id="contact-success" hidden>Your message has been sent successfully!</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">Knowledge<span>ForFun</span></a>
+        <p class="footer__tagline">Explore. Learn. Be inspired.</p>
+      </div>
+      <p class="footer__copy">&copy; <span id="footer-year"></span> KnowledgeForFun. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
